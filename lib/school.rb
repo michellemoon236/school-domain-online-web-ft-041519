@@ -14,7 +14,7 @@ class School
     @name = name
     @grade = grade
     ROSTER[@grade] ||= []
-    ROSTER[@grade] << "#{@name}"
+    ROSTER[@grade] << "#{@name}" unless 
   end
   
 end 
