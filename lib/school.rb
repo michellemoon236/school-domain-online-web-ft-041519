@@ -14,7 +14,7 @@ class School
     @name = name
     @grade = grade
     ROSTER[@grade] ||= []
-    ROSTER[@grade] << "#{@name}" unless 
+    ROSTER[@grade] << "#{@name}" unless ROSTER[@grade].include?(@name)
   end
   
 end 
