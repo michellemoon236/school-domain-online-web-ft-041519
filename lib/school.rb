@@ -17,8 +17,8 @@ class School
     ROSTER[@grade] << "#{@name}"
   end
   
-  def grade
-    ROSTER[@grade]
+  def grade (grade)
+    ROSTER[grade]
   end 
   
   def sort 
