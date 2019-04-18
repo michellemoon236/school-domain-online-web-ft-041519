@@ -25,9 +25,9 @@ class School
   
   def sort 
     #binding.pry 
-    ROSTER.each do |grade, names|
-      ROSTER[@grade] = (ROSTER[@grade].sort)
-    ROSTER
+    ROSTER.map do |grade, names|
+      names.sort
+    end
     binding.pry
   end 
 end 
