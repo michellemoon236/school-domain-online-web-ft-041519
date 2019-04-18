@@ -27,6 +27,6 @@ class School
     #binding.pry 
     ROSTER[@grade] = (ROSTER[@grade].sort)
     ROSTER
-      
+    binding.pry
   end 
 end 
