@@ -28,6 +28,6 @@ class School
     ROSTER.map do |grade, names|
       ROSTER[grade].sort
     end
-    # #binding.pry
+    binding.pry
   end 
 end 
