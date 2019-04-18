@@ -25,7 +25,7 @@ class School
   
   def sort 
     #binding.pry 
-    ROSTER[@grade] = ROSTER[@grade].sort
+    ROSTER[@grade] = (ROSTER[@grade].sort)
     ROSTER
       
   end 
