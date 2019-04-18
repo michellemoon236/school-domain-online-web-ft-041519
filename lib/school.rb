@@ -2,23 +2,20 @@ require 'pry'
 
 class School
   
-  attr_accessor :roster
+  attr_accessor :roster :school
   
-  ROSTER = {}
   
   def initialize(school)
     @school = school
+    @roster = {}
   end
   
-  def roster
-    ROSTER
-  end
   
   def add_student (name, grade)
     @name = name
     @grade = grade
-    ROSTER[@grade] ||= []
-    ROSTER[@grade] << "#{@name}"
+    @roster[@grade] ||= []
+    @roster[@grade] << "#{@name}"
   end
   
   def grade (grade)
