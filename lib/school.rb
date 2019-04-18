@@ -16,7 +16,7 @@ class School
     @name = name
     @grade = grade
     ROSTER[@grade] ||= []
-    ROSTER[@grade] << "{@name}"
+    ROSTER[@grade] << "#{@name}"
   end
   
   def grade (grade)
