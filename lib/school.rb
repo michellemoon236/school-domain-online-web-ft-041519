@@ -2,6 +2,7 @@ require 'pry'
 
 class School
   
+  attr_accessor 
   ROSTER = {}
   
   def initialize(school)
